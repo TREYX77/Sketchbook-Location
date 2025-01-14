@@ -1,0 +1,232 @@
+H2 
+
+background(r,g,b);
+	Selecteer een achtergrond kleur. 
+
+fill(r,g,b); 
+	Selecteer een kleur om te gaan gebruiken.
+
+size(x,y); 
+	Bepaal de grote van het applicatiescherm.
+
+text(String, x, y);
+	Plaats een stuk tekst op het scherm. 
+
+print(String);
+	Schrijf een stukje tekst in de console.
+
+println(String);
+	Schrijf een regel in de console. 
+
+
+
+
+H3
+
+
+rect(x,y,w,h);
+	Teken een vierkant. De coördinaten zijn de linker boven hoek. 
+
+triangle(x1, y1, x2, y2, x3, y3);
+	Teken een driehoek gebaseerd op drie coördinaten.
+
+ellipse(x, y, w, h);
+	Teken een cirkel. De coördinaten zijn het middelpunt. 
+
+arc(x, y, w, h, start, stop);
+	Teken een gedeelte van een cirkel. PI is halve cirkel. 2*PI is hele cirkel. 
+
+
+
+H4
+
+
+fill(r,g,b); 
+	Selecteer een kleur om te gaan gebruiken als vulling voor figuren en teksten.
+
+noFill();
+	Geen vulling bij het maken van figuren.
+
+stroke();
+	Selecteer kleuren om te gebruiken voor lijnen en buitenkanten van figuren.
+
+noStroke();
+Geen lijnen bij het maken van figuren.
+
+strokeWeight(int); 
+	Selecteer de dikte van lijnen en buitenkanten van figure. 
+
+
+Teksten
+text(String, x, y);
+	Plaats een stuk tekst op het scherm. 
+
+print(String);
+	Schrijf een stukje tekst in de console.
+
+println(String);
+	Schrijf een regel in de console. 
+
+round(float);
+	Afronden zoals normaal. Half (0.5) of hoger wordt het volgende gehele getal.
+
+floor(float);
+	Afronden naar het vorige hele getal.
+
+ceil(float);
+	Afronden naar het volgende hele getal.
+
+
+
+H6
+
+
+if(voorwaarde){code}
+	Voer code tussen accolades uit als voorwaarde waar is. Anders niets.
+
+if(voorwaarde){code}else{code}
+	Voer code tussen eerste set accolades uit als voorwaarde waar is. Anders voer code 
+	in de tweede set accolades uit. 
+
+if(voorwaarde){code}else if(voorwaarde){code}
+Voer code tussen eerste set accolades uit als voorwaarde waar is. Anders voer code 
+	in de tweede set accolades uit als de tweede voorwaarde waar is. Anders niets. 
+
+if(voorwaarde){code}else if(voorwaarde){code}else{code}
+	Voer code tussen eerste set accolades uit als voorwaarde waar is. Anders voer code 
+	in de tweede set accolades uit als de tweede voorwaarde waar is. Anders voer code 
+	in laatste set accolades uit. 
+
+If statement operators
+Betekenis
+==
+gelijk aan
+!=
+niet gelijk aan
+>=
+groter dan of gelijk aan
+<=
+kleiner dan of gelijk aan
+<
+kleiner dan
+>
+groter dan
+&&
+en
+||
+of
+
+
+
+
+
+H7
+
+
+Switch
+
+switch(waarde of variabele){
+cases & code
+}
+
+
+Basis van een switch case.
+
+
+Case
+
+case waarde:
+	code
+	break;
+Basis van een case.
+
+
+
+Default
+
+default:
+	code
+	break;
+
+Default case als er geen overeenkomst met de rest van de cases is.
+
+
+
+Technisch 
+
+break; 
+	stop met het uitvoeren van de code. Werkt bij for loop, while loop en switch case.
+
+
+
+
+
+H8
+
+
+
+
+
+
+
+Loops
+For loop
+voer de code tussen de accolades uit zolang de voorwaarde waar is. Elke keer dat 
+	de code uitgevoerd is update de variabele. Variabele moet een getal variabele zijn.
+for(variabele; voorwaarde; update){
+	code
+}
+
+While loop
+	voer de code tussen de accolades uit zolang de voorwaarde waar is. Elke keer dat 
+	de code uitgevoerd wordt update de variabele ook. Variabele mag van elk primitief 
+ 	datatype zijn. 
+variabele
+
+While(voorwaarde){
+	code
+	update;
+}
+
+H9
+
+
+void setup(){}
+	Wordt aan het begin van je applicatie eenmalig aangeroepen. Is samen met draw 
+	de basis van je sketch.
+
+void draw(){}
+	Wordt meerdere keren per seconde aangeroepen om het scherm te tekenen. Is 
+ 	samen met setup de basis van je sketch.
+
+framerate(int);
+	Stel in hoe vaak per seconde de draw functie wordt uitgevoerd.  
+           Dit doe je vaak in de setup.
+
+noLoop();	
+	Zorgt er voor dat de draw functie niet meer in herhaling wordt     
+           uitgevoerd.
+
+loop();
+	Zorgt er voor dat als de draw functie herhaling uit staat deze 
+           weer aan gaat. 
+
+redraw();
+	Zorgt ervoor dat de draw functie een keer uitgevoerd wordt. Dit 
+           heeft geen zin als de draw functie op loop staat.
+
+//
+	Alles na de // op dezelfde regel wordt gezien als commentaar niet als code. 
+
+/* */
+	Alles tussen de sterretjes wordt gezien als commentaar niet als code.
+
+instanced variabele
+	Bovenaan buiten een methode bestaat op de hele pagina (class).
+local variabele
+Binnen een body van een methode. bestaat alleen daar en zolang de methode 
+	wordt uitgevoerd. Begint de methode opnieuw dan begint ook de variabele opnieuw
+
+
+
+
