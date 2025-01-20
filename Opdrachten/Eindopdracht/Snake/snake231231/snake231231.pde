@@ -102,21 +102,21 @@ void spawnFood() {
 
 void keyPressed() {
   // controlss
-  if (key == 'w' || keyCode == UP && yDir == 0) { // ==0 beweegt niet gelijk, pas volgende frame maar , telt voor ydir en xdir
+  if (key == 'w' && yDir == 0 || keyCode == UP && yDir == 0) { // ==0 beweegt niet gelijk, pas volgende frame maar , telt voor ydir en xdir
     xDir = 0;
     yDir = -1;
-  } else if (key == 's' || keyCode == DOWN && yDir == 0) {
+  } else if (key == 's' && yDir == 0 || keyCode == DOWN && yDir == 0) {
     xDir = 0;
     yDir = 1;
-  } else if (key == 'a' || keyCode == LEFT && xDir == 0) {
+  } else if (key == 'a' && xDir == 0 || keyCode == LEFT && xDir == 0) {
     xDir = -1;
     yDir = 0;
-  } else if (key == 'd' || keyCode == RIGHT && xDir == 0) {
+  } else if (key == 'd' && xDir == 0 || keyCode == RIGHT && xDir == 0) {
     xDir = 1;
     yDir = 0;
   }
 
-  // Restart game
+  // Restart game na de collision
   if (key == 'r' || key == 'R') {
     restartGame();
   }
@@ -130,3 +130,8 @@ void restartGame() {
   yDir = 0; // y verplaatst niet
   gameOver = false; // game gaat door
 }
+
+
+
+/*FEEDBACK CODE: in het future andere manier van controls maken, want if else wordt te rommelig en onhandig.
+ook mischien de snelheid individuel */
