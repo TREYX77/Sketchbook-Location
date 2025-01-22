@@ -1,12 +1,12 @@
 ArrayList<PVector> snake; // stukje slang worden als positie ogesglagen
 PVector food;     // eten plek spawn
-int gridSize = 20;        // grote van vierkanten
+int gridSize = 30;        // grote van vierkanten
 int xDir = 1, yDir = 0; // snake positie
 boolean gameOver = false;
 
 void setup() {
   size(1280, 720);
-  frameRate(15); // game speed als framerate
+  frameRate(5); // game speed als framerate
 
 
   snake = new ArrayList<PVector>();
