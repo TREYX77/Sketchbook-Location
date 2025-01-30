@@ -78,6 +78,11 @@ void checkCollisions() {
   if (head.x < 0 || head.y < 0 || head.x >= width || head.y >= height) {
     gameOver = true;
   }
+  for(int i = 1; i< snake.size(); i++){
+    if(head.equals(snake.get(i))){
+      gameOver=true;
+    }
+  }
 }
 
 void drawSnake() {
